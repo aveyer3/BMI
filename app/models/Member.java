@@ -20,7 +20,6 @@ public class Member extends Model
   public int startingWeight;
 
   @OneToMany(cascade = CascadeType.ALL)
-  //public List<Todo> todolist = new ArrayList<Todo>();
   public List<Assessment> assessmentList = new ArrayList<Assessment>();
 
 

@@ -7,15 +7,15 @@ import javax.persistence.Entity;
 @Entity
 public class Assessment extends Model
 {
-    public int weight;
-    public int chest;
-    public int thigh;
-    public int upperArm;
-    public int waist;
-    public int hips;
+    public float weight;
+    public float chest;
+    public float thigh;
+    public float upperArm;
+    public float waist;
+    public float hips;
     public String comment;
 
-    public Assessment(int weight, int chest, int thigh, int upperArm, int waist, int hips, String comment)
+    public Assessment(float weight, float chest, float thigh, float upperArm, float waist, float hips, String comment)
     {
         this.weight = weight;
         this.chest = chest;
