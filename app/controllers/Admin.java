@@ -1,6 +1,6 @@
 package controllers;
 
-import models.Assessment;
+import models.Member;
 import play.Logger;
 import play.mvc.Controller;
 
@@ -11,7 +11,17 @@ public class Admin extends Controller
   public static void index()
   {
     Logger.info("Rendering Admin");
-    List<Assessment> assessmentList = Assessment.findAll();
-    render("admin.html", assessmentList);
+    List<Member> memberList = Member.findAll();
+    render("admin.html", memberList);
   }
+
+  public static void deleteMember(Long id)
+  {
+    Member member = Member.findById(id);
+    //Member.memberList.remove(member);
+    member.delete();
+    Logger.info("Deleting " + member.name);
+    redirect("/dashboard");
+  }
+
 }

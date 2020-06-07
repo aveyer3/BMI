@@ -3,22 +3,21 @@
 
 <section class="ui raised segment">
   <header class="ui header">
-    Assessment List
+    Member List
   </header>
-  <table class="ui fixed table">
+  <table class="ui celled table">
     <thead>
     <tr>
-      <th>${member.name}</th>
-      <th>ID</th>
-      <th>Assessment</th>
+      <th>Member</th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
     <div class="ui bulleted list">
-      #{list items:assessmentList, as:'assessment'}
+      #{list items:memberList, as:'member'}
         <tr>
-          <td> ${assessment.id} </td>
-          <td> ${assessment.weight} </td>
+          <td> ${member.name} </td>
+          <td> <a href="/admin/${member.id}/deleteMember " class="ui tiny red button"> Delete</a> </td>
         </tr>
       #{/list}
     </div>
