@@ -1,5 +1,5 @@
 Assessment(a1):
-  weight: 123
+  weight: 120
   chest: 45
   thigh: 12
   upperArm: 23
@@ -16,6 +16,15 @@ Assessment(a2):
   hips: 35
   comment: good
 
+Assessment(a3):
+  weight: 60
+  chest: 30
+  thigh: 15
+  upperArm: 15
+  waist: 25
+  hips: 30
+  comment: good
+
 Member(m1):
   name: homer simpson
   gender: male
@@ -23,7 +32,7 @@ Member(m1):
   password: secret
   address: 123 fake st
   height: 1.8
-  startingWeight: 75
+  startingWeight: 120
   assessmentList:
   - a1
 
@@ -33,7 +42,18 @@ Member(m2):
   email: marge@simpson.com
   password: secret
   address: 123 fake street
-  height: 1800
+  height: 1.8
   startingWeight: 70
   assessmentList:
     - a2
+
+Member(m3):
+  name: test user
+  gender: female
+  email: test@user.com
+  password: secret
+  address: 123 real street
+  height: 1.7
+  startingWeight: 60
+  assessmentList:
+    - a3
