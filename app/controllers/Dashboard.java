@@ -27,16 +27,14 @@ public class Dashboard extends Controller
     redirect("/dashboard");
   }
 
-/**
-  public static void deleteAssessment(Long id, Long assessmentId)
+  public static void deleteAssessment(Long id, Long assessmentID)
   {
     Member member = Member.findById(id);
-    Assessment assessment = Assessment.findById(assessmentId);
+    Assessment assessment = Assessment.findById(assessmentID);
     member.assessmentList.remove(assessment);
     member.save();
     assessment.delete();
     Logger.info("Deleting " + assessment.weight + assessment.chest + assessment.thigh + assessment.upperArm + assessment.waist + assessment.hips + assessment.comment);
     redirect("/dashboard");
   }
- **/
 }
