@@ -12,14 +12,22 @@
       <div class="ui segment">
         <img class="ui image" src="/public/images/member_icon.png" width="80px" height="80px">
         <h3>${member.name}</h3>
+        <div class="ui segment">
+          <h5>Height: ${member.height}</h5>
+          <h5>Starting Weight: ${member.startingWeight}</h5>
+        </div>
       </div>
 
       <div class="ui segment">
+        <br>
+        <br>
         <img class="ui image" src="/public/images/heart.webp" width="80px" height="80px">
         <h3>BMI: ${member.BMI}</h3>
       </div>
 
       <div class="ui segment">
+        <br>
+        <br>
         <img class="ui image" src="/public/images/doctor.png" width="80px" height="80px">
         <h3>Result: ${member.BMIResult}</h3>
       </div>
@@ -80,6 +88,7 @@
         <th>Waist</th>
         <th>Hips</th>
         <th>Comment</th>
+        <th></th> <!-- Placeholder for delete button column -->
       </tr>
       </thead>
 
@@ -94,9 +103,11 @@
       <td> ${assessment.waist} </td>
       <td> ${assessment.hips} </td>
       <td> ${assessment.comment} </td>
+
+      <td> <a href="/dashboard/${member.id}/deleteAssessment/${assessment.id} " class="ui tiny red button"> Delete</a> </td>
     </tr>
 
-    <td> <a href="/dashboard/${member.id}/deleteAssessment/${assessment.id} " class="ui tiny red button"> Delete </a> </td>
+
 
       #{/list}
   </div>

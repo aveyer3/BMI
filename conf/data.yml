@@ -5,7 +5,16 @@ Assessment(a1):
   upperArm: 23
   waist: 32
   hips: 38
-  comment: lol
+  comment: test comment
+
+Assessment(a2):
+  weight: 75
+  chest: 40
+  thigh: 10
+  upperArm: 20
+  waist: 28
+  hips: 35
+  comment: good
 
 Member(m1):
   name: homer simpson
@@ -26,3 +35,5 @@ Member(m2):
   address: 123 fake street
   height: 1800
   startingWeight: 70
+  assessmentList:
+    - a2

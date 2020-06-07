@@ -35,6 +35,7 @@ public class Member extends Model
     this.height = height;
     this.startingWeight = startingWeight;
     this.BMI = BMI;
+
     getBMI();
     getBMIResult();
   }
