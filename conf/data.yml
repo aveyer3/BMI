@@ -8,18 +8,24 @@ Todo(t3):
   title: Make more tea
 
 Member(m1):
-  firstname: homer
-  lastname: simpson
+  name: homer simpson
+  gender: male
   email: homer@simpson.com
   password: secret
+  address: 123 fake st
+  height: 1900
+  startingWeight: 100
   todolist:
   - t1
   - t2
 
 Member(m2):
-  firstname: marge
-  lastname: simpson
+  name: marge simpson
+  gender: female
   email: marge@simpson.com
   password: secret
+  address: 123 fake street
+  height: 1800
+  startingWeight: 70
   todolist:
   - t3
