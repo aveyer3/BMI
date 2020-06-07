@@ -25,6 +25,15 @@ Assessment(a3):
   hips: 30
   comment: good
 
+Assessment(a4):
+  weight: 110
+  chest: 44
+  thigh: 11
+  upperArm: 22
+  waist: 31
+  hips: 37
+  comment: progress
+
 Member(m1):
   name: homer simpson
   gender: male
@@ -35,6 +44,7 @@ Member(m1):
   startingWeight: 120
   assessmentList:
   - a1
+  - a4
 
 Member(m2):
   name: marge simpson
