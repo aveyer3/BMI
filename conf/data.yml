@@ -7,29 +7,16 @@ Assessment(a1):
   hips: 38
   comment: lol
 
-
-Todo(t1):
-  title: Make tea
-
-Todo(t2):
-  title: Go for snooze
-
-Todo(t3):
-  title: Make more tea
-
 Member(m1):
   name: homer simpson
   gender: male
   email: homer@simpson.com
   password: secret
   address: 123 fake st
-  height: 1900
-  startingWeight: 100
+  height: 1.8
+  startingWeight: 75
   assessmentList:
   - a1
-  todolist:
-  - t1
-  - t2
 
 Member(m2):
   name: marge simpson
@@ -39,5 +26,3 @@ Member(m2):
   address: 123 fake street
   height: 1800
   startingWeight: 70
-  todolist:
-  - t3
