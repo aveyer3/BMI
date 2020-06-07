@@ -47,17 +47,23 @@
         <th>Upper Arm</th>
         <th>Waist</th>
         <th>Hips</th>
+        <th>Comment</th>
       </tr>
       </thead>
 
   <tbody>
   <div class="ui bulleted list">
-    #{list items:todolist, as:'todo'}
+    #{list items:assessmentList, as:'assessment'}
     <tr>
-      <td> ${todo.title} </td>
-      <!--
-      <td> <a href="/dashboard/${member.id}/deletetodo/${todo.id} " class="ui tiny red button"> Delete </a> </td>
-      -->
+      <td> ${assessment.weight} </td>
+      <td> ${assessment.chest} </td>
+      <td> ${assessment.thigh} </td>
+      <td> ${assessment.upperArm} </td>
+      <td> ${assessment.waist} </td>
+      <td> ${assessment.hips} </td>
+      <td> ${assessment.comment} </td>
+    </tr>
+
       #{/list}
   </div>
   </tbody>

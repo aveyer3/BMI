@@ -1,3 +1,13 @@
+Assessment(a1):
+  weight: 123
+  chest: 45
+  thigh: 12
+  upperArm: 23
+  waist: 32
+  hips: 38
+  comment: lol
+
+
 Todo(t1):
   title: Make tea
 
@@ -15,6 +25,8 @@ Member(m1):
   address: 123 fake st
   height: 1900
   startingWeight: 100
+  assessmentList:
+  - a1
   todolist:
   - t1
   - t2

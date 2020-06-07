@@ -1,5 +1,6 @@
 package controllers;
 
+import models.Assessment;
 import models.Member;
 import models.Todo;
 import play.Logger;
@@ -13,28 +14,31 @@ public class Dashboard extends Controller
   {
     Logger.info("Rendering Dashboard");
     Member member = Accounts.getLoggedInMember();
-    List<Todo> todolist = member.todolist;
-    render("dashboard.html", member, todolist);
+    //List<Todo> todolist = member.todolist;
+    List<Assessment> assessmentList = member.assessmentList;
+    render("dashboard.html", member, assessmentList);
   }
 
-  public static void addTodo(String title)
+  public static void addAssessment(int weight, int chest, int thigh, int upperArm, int waist, int hips, String comment)
   {
     Member member = Accounts.getLoggedInMember();
-    Todo todo = new Todo(title);
-    member.todolist.add(todo);
+    Assessment assessment = new Assessment(weight, chest, thigh, upperArm, waist, hips, comment);
+    member.assessmentList.add(assessment);
     member.save();
-    Logger.info("Adding Todo" + title);
+    Logger.info("Adding Todo" + weight + chest + thigh + upperArm + waist + hips + comment);
     redirect("/dashboard");
   }
 
+  /**
   public static void deleteTodo(Long id, Long todoid)
   {
     Member member = Member.findById(id);
     Todo todo = Todo.findById(todoid);
-    member.todolist.remove(todo);
+    member.assessmentList.remove(todo);
     member.save();
     todo.delete();
     Logger.info("Deleting " + todo.title);
     redirect("/dashboard");
   }
+  **/
 }
